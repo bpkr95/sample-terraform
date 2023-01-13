@@ -9,7 +9,7 @@ module "resource_group" {
 
 module "function_app" {
 #   source                              = "git::git@ssh.dev.azure.com:v3/cloud/loud-modules/functionapp?ref=feature/refactor-modules"
-  source                              = "../functionapp"
+  source                              = "../functional"
   location                            = var.location
   environment                         = var.environment
   main_project                        = var.main_project
